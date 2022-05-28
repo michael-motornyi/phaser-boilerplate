@@ -1,13 +1,16 @@
+/// <reference path="../node_modules/phaser/types/SpineGameObject.d.ts" />
+/// <reference path="../node_modules/phaser/types/SpinePlugin.d.ts" />
+
 import "./style.css";
 import "phaser/plugins/spine/dist/SpinePlugin";
 
-import Phaser, { Game, Types } from "phaser";
+import { AUTO, Game, Types } from "phaser";
 
 import LoadingScene from "./scenes/loading-scene";
 
 const gameConfig: Types.Core.GameConfig = {
   title: "Slavianica",
-  type: Phaser.AUTO,
+  type: AUTO,
   scale: {
     width: window.innerWidth,
     height: window.innerHeight,
